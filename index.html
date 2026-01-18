@@ -8,10 +8,32 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-[#230E3D] text-white font-inter">
     <!-- == Header section -->
-    <section>
-        <h1 class="text-xll text-">techwave-website</h1>
-    </section>
+    <header class="flex justify-between items-center m-auto max-w-[1200px] h-[92px]">
+        <h2 class="text-4xl text-white font-bold ">Tech<span class="text-[#FB09B4]">Wave</span></h2>
+        <nav class="list-none">
+            <ul class="flex gap-8 font-medium text-base text-white">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Episodes</a></li>
+                <li><a href="#">Host</a></li>
+            </ul>
+        </nav>
+        <button class="px-4 py-3 bg-[linear-gradient(to_right,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-3xl">Subscribe</button>
+    </header>
+    <main class="w-[1200px] m-auto">
+        <!-- Hero section -->
+        <section class="flex justify-center my-20">
+            <div class="flex flex-col items-center text-center">
+                <img src="./images/hero-circle.png" alt="hero circle images">
+                <h2 class="text-6xl font-extrabold mt-9 mb-4">TechWave</h2>
+                <p class="text-sm">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <div class="mt-6">
+                    <button class="px-4 py-3 bg-[linear-gradient(to_right,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-3xl">Listen on Spotify</button>
+                    <button class="px-8 py-3 rounded-3xl border-2 text-green-500 border-green-500">Subscribe</button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
