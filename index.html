@@ -9,29 +9,95 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-[#230E3D] text-white font-inter">
-    <!-- == Header section -->
-    <header class="flex justify-between items-center m-auto max-w-[1200px] h-[92px]">
-        <h2 class="text-4xl text-white font-bold ">Tech<span class="text-[#FB09B4]">Wave</span></h2>
-        <nav class="list-none">
-            <ul class="flex gap-8 font-medium text-base text-white">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Episodes</a></li>
-                <li><a href="#">Host</a></li>
-            </ul>
-        </nav>
-        <button class="px-4 py-3 bg-[linear-gradient(to_right,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-3xl">Subscribe</button>
+    <!-- == Navber section -->
+    <header class="bg-[#1A0B2E]">
+        <div class="flex justify-between items-center m-auto max-w-[1280px] h-[92px]">
+            <h2 class="text-4xl text-white font-bold">Tech<span class="text-[#FB09B4]">Wave</span></h2>
+            <nav class="list-none">
+                <ul class="flex gap-8 font-medium text-base text-white">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Episodes</a></li>
+                    <li><a href="#">Host</a></li>
+                </ul>
+            </nav>
+            <button class="px-4 py-3 bg-[linear-gradient(to_right,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-3xl">Subscribe</button>
+        </div>
     </header>
-    <main class="w-[1200px] m-auto">
-        <!-- Hero section -->
-        <section class="flex justify-center my-20">
-            <div class="flex flex-col items-center text-center">
-                <img src="./images/hero-circle.png" alt="hero circle images">
-                <h2 class="text-6xl font-extrabold mt-9 mb-4">TechWave</h2>
-                <p class="text-sm">Your daily dose of tech insights, productivity hacks, and personal growth</p>
-                <div class="mt-6">
-                    <button class="px-4 py-3 bg-[linear-gradient(to_right,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-3xl">Listen on Spotify</button>
-                    <button class="px-8 py-3 rounded-3xl border-2 text-green-500 border-green-500">Subscribe</button>
+
+    <main class="m-auto">
+        <!-- == Banner section == -->
+        <section class="bg-[url('/images/hero-bg.png')] bg-cover bg-center">
+            <div class="flex justify-center py-20 ">
+                <div class="flex flex-col items-center text-center">
+                    <div class="relative">
+                        <img src="./images/hero-circle.png" alt="hero circle images">
+                        <div class="absolute inset-0 flex justify-center items-center">
+                            <img src="./images/microphone.png" alt="">
+                        </div>
+                        <span class="absolute top-0 right-0 bg-green-280px text-black px-4 py-1 rounded text-lg font-semibold">
+                            New
+                        </span>
+                    </div>
+                    <h2 class="text-6xl font-extrabold mt-9 mb-4">TechWave</h2>
+                    <p class="text-sm">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <div class="mt-6 flex flex-row gap-3">
+                        <button class="flex items-center gap-2 px-4 py-3 bg-[linear-gradient(to_right,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-3xl"><img src="./images/spotify.png" alt="">
+                             Listen on Spotify
+                        </button>
+                        <button class="flex items-center gap-2 px-8 py-3 rounded-3xl border-2 text-green-500 border-green-500">Subscribe
+                             <img src="./images/message.png" alt="">
+                        </button>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- == About section -->
+        <section class="bg-[#1A0B2E]">
+            <div class=" w-[1280px] m-auto">
+                <div class="text-center space-y-4 pt-28">
+                    <h2 class="text-4xl text-white font-bold">About the Podcast</h2>
+                    <p class="text-sm leading-8">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology <br>
+                    We break down complex topics into digestible insights, explore productivity strategies that actually work <br>
+                    and share stories of personal growth from industry leaders.
+                    </p>
+                    <br class="mb-5">Join thousands of young professionals and tech enthusiasts who start their day with TechWave
+                </div>
+                <hr class="my-20">
+                <div class="flex justify-between">
+                    <div class="w-[294px] h-[94px] text-center">
+                        <h2 class="text-[48px] text-green-280px font-black">150K+</h2>
+                        <p class="text-sm leading-5">Monthly Listeners</p>
+                    </div>
+                    <div class="w-[294px] h-[94px] text-center">
+                        <h2 class="text-[48px] text-green-280px font-black">200+</h2>
+                        <p class="text-sm leading-5">Episodes Published</p>
+                    </div>
+                    <div class="w-[294px] h-[94px] text-center">
+                        <h2 class="text-[48px] text-green-280px font-black">4.9★</h2>
+                        <p class="text-sm leading-5">Average Rating</p>
+                    </div>
+                    <div class="w-[294px] h-[94px] text-center">
+                        <h2 class="text-[48px] text-green-280px font-black">50+</h2>
+                        <p class="text-sm leading-5">Industry Experts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- == Why Choose Section == -->
+        <section class="w-[1200px] m-auto">
+            <h2 class="text-4xl font-bold text-center">
+                Why Choose TechWave
+            </h2>
+            <div class="grid grid-cols-3 grid-rows-6 gap-4">
+                <!-- First div: span 2 columns -->
+                <div class=" bg-amber-600 row-span-2"></div>
+                <div class=" bg-black"></div>
+                <div class="h-[140px] bg-teal-600"></div>
+                <div class="h-[140px] bg-stone-700"></div>
+                <div class="h-[140px] bg-amber-600"></div>
+                <div class="h-[140px] bg-amber-600"></div>
             </div>
         </section>
     </main>
