@@ -13,16 +13,19 @@
 
     <!-- == Navber section -->
     <header class="bg-[#1A0B2E]">
-        <div class="flex justify-between items-center m-auto max-w-[1200px] h-[92px]">
-            <h2 class="text-4xl font-bold">Tech<span class="text-[#FB09B4]">Wave</span></h2>
-            <nav class="list-none">
+        <div class="px-4 flex justify-between items-center m-auto max-w-[1200px] h-[92px]">
+            <img class="w-[137px] h-5 lg:w-55 lg:h-8" src="./images/TechWave.png" alt="TachWave logo">
+            <nav class="list-none hidden sm:block">
                 <ul class="flex gap-8 font-medium text-base text-white">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Episodes</a></li>
                     <li><a href="#">Host</a></li>
                 </ul>
             </nav>
-            <button class="px-4 py-3 bg-[linear-gradient(to_right,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-3xl">Subscribe</button>
+            <button class="hidden sm:block px-4 py-3 bg-[linear-gradient(to_right,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-3xl">Subscribe</button>
+            <div class="block sm:hidden">
+                <img class="w-6 h-6" src="./images/hamburger-menu.png" alt="">
+            </div>
         </div>
     </header>
 
@@ -32,21 +35,21 @@
             <div class="flex justify-center py-20 ">
                 <div class="flex flex-col items-center text-center">
                     <div class="relative">
-                        <img src="./images/hero-circle.png" alt="hero circle images">
+                        <img class="w-50 h-50" src=" ./images/hero-circle.png" alt="hero circle images">
                         <div class="absolute inset-0 flex justify-center items-center">
-                            <img src="./images/microphone.png" alt="">
+                            <img class="w-11 h-18" src="./images/microphone.png" alt="">
                         </div>
                         <span class="absolute top-0 right-0 bg-green-500 text-black px-4 py-1 rounded text-lg font-semibold">
                             New
                         </span>
                     </div>
-                    <h2 class="text-6xl font-extrabold mt-9 mb-4">TechWave</h2>
+                    <h2 class="text-[40px] lg:text-6xl font-extrabold mt-9 mb-4">TechWave</h2>
                     <p class="text-sm">Your daily dose of tech insights, productivity hacks, and personal growth</p>
                     <div class="mt-6 flex flex-row gap-3">
-                        <button class="flex items-center gap-2 px-4 py-3 bg-[linear-gradient(to_right,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-3xl"><img src="./images/spotify.png" alt="">
+                        <button class="flex items-center gap-2 px-4 py-2.5 bg-[linear-gradient(to_right,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-3xl"><img src="./images/spotify.png" alt="">
                              Listen on Spotify
                         </button>
-                        <button class="flex items-center gap-2 px-8 py-3 rounded-3xl border-2 text-green-500 border-green-500">Subscribe
+                        <button class="flex items-center gap-2 px-8 py-2.5 rounded-3xl border-2 text-green-500 border-green-500">Subscribe
                              <img src="./images/message.png" alt="">
                         </button>
                     </div>
@@ -56,7 +59,7 @@
 
         <!-- == About section == -->
         <section class="bg-[#1A0B2E]">
-            <div class="w-[1200px] m-auto">
+            <div class="lg:w-[1200px] m-auto">
                 <div class="text-center space-y-4 pt-28">
                     <h2 class="text-4xl text-white font-bold">About the Podcast</h2>
                     <p class="text-sm leading-8">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology <br>
@@ -66,21 +69,21 @@
                     <br class="mb-5">Join thousands of young professionals and tech enthusiasts who start their day with TechWave
                 </div>
                 <hr class="my-20">
-                <div class="flex justify-between pb-30">
-                    <div class="w-[294px] h-[94px] text-center">
-                        <h2 class="text-[48px] text-green-500 font-black">150K+</h2>
+                <div class="grid grid-cols-2 lg:flex lg:justify-between pb-30">
+                    <div class="lg:w-[294px] h-[94px] text-center">
+                        <h2 class="text-[40px] lg:text-[48px] text-green-500 font-black">150K+</h2>
                         <p class="text-sm leading-5">Monthly Listeners</p>
                     </div>
-                    <div class="w-[294px] h-[94px] text-center">
-                        <h2 class="text-[48px] text-green-500 font-black">200+</h2>
+                    <div class="lg:w-[294px] h-[94px] text-center">
+                        <h2 class="text-[40px] lg:text-[48px] text-green-500 font-black">200+</h2>
                         <p class="text-sm leading-5">Episodes Published</p>
                     </div>
-                    <div class="w-[294px] h-[94px] text-center">
-                        <h2 class="text-[48px] text-green-500 font-black">4.9★</h2>
+                    <div class="lg:w-[294px] h-[94px] text-center">
+                        <h2 class="text-[40px] lg:text-[48px] text-green-500 font-black">4.9★</h2>
                         <p class="text-sm leading-5">Average Rating</p>
                     </div>
-                    <div class="w-[294px] h-[94px] text-center">
-                        <h2 class="text-[48px] text-green-500 font-black">50+</h2>
+                    <div class="lg:w-[294px] h-[94px] text-center">
+                        <h2 class="text-[40px] lg:text-[48px] text-green-500 font-black">50+</h2>
                         <p class="text-sm leading-5">Industry Experts</p>
                     </div>
                 </div>
@@ -88,14 +91,14 @@
         </section>
 
         <!-- == Why Choose Section == -->
-        <section class="w-[1200px] m-auto">
+        <section class="lg:w-[1200px] m-auto">
             <h2 class="text-4xl font-bold text-center mt-30 mb-12">
                 Why Choose TechWave
             </h2>
 
-            <div class="grid grid-cols-3 grid-rows-3 gap-4 pb-30">
+            <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-3 gap-4 pb-30">
                 <!-- Card 1: left, span 2 rows -->
-                <div class="bg-[#351165] row-span-2 px-10 py-16 rounded-4xl
+                <div class="w-124 bg-[#351165] row-span-2 px-10 py-16 rounded-4xl
                             flex flex-col justify-center gap-4 text-left">
                     <img class="w-15 h-15" src="./images/headphone.png" alt="">
                     <h3 class="text-2xl">Premium Audio Quality</h3>
@@ -105,7 +108,7 @@
                 </div>
 
                 <!-- Card 2: top right -->
-                <div class="bg-[#351165] col-span-2 px-10 py-16 rounded-4xl
+                <div class="w-124 bg-[#351165] col-span-2 px-10 py-16 rounded-4xl
                             flex flex-col justify-center gap-4 text-left">
                     <img class="w-15 h-15" src="./images/device.png" alt="">
                     <h3 class="text-2xl">Premium Audio Quality</h3>
@@ -115,7 +118,7 @@
                 </div>
 
                 <!-- Card 3: bottom right -->
-                <div class="bg-[#351165] col-span-2 px-10 py-16 rounded-4xl
+                <div class="w-124 bg-[#351165] col-span-2 px-10 py-16 rounded-4xl
                             flex flex-col justify-center gap-4 text-left">
                     <img class="w-15 h-15" src="./images/Stroke.png" alt="">
                     <h3 class="text-2xl">Premium Audio Quality</h3>
@@ -125,7 +128,7 @@
                 </div>
 
                 <!-- Card 4: bottom left -->
-                <div class="bg-[#351165] col-span-2 px-10 py-16 rounded-4xl
+                <div class="w-124 bg-[#351165] col-span-2 px-10 py-16 rounded-4xl
                             flex flex-col justify-center gap-4 text-left">
                     <img class="w-15 h-15" src="./images/icon.png" alt="">
                     <h3 class="text-2xl">Premium Audio Quality</h3>
@@ -135,7 +138,7 @@
                 </div>
 
                 <!-- Card 5: bottom right -->
-                <div class="bg-[#351165] px-10 py-12 box-border rounded-4xl
+                <div class="w-124 bg-[#351165] px-10 py-12 box-border rounded-4xl
                             flex flex-col justify-center gap-4 text-left">
                     <img class="w-15 h-15" src="./images/resource.png" alt="">
                     <h3 class="text-2xl">Premium Audio Quality</h3>
@@ -149,8 +152,8 @@
         <!-- == Featured section == -->
         <section class="bg-[#1A0B2E] pt-30">
             <h1 class="text-4xl text-white font-bold text-center">Featured Episodes</h1>
-            <div class="flex justify-between w-[1200px] m-auto mt-10">
-                <div class="w-[380px] h-[440px] rounded-lg bg-[#250D44]">
+            <div class="grid grid-cols-1 gap-6 lg:flex justify-between lg:w-[1200px] m-auto mt-10">
+                <div class="w-full h-auto lg:w-[380px] lg:h-[440px] rounded-lg bg-[#250D44]">
                     <iframe class="w-full h-[214px]" src="https://www.youtube.com/embed/BHTw1gvj4_U?si=WVWo31G-9dD7Tkmz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="px-4">
                         <h3 class="text-2xl font-bold mt-6 mb-3">The Future of AI in Everyday <br> Life</h3>
@@ -161,7 +164,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-[380px] h-[440px] rounded-lg bg-[#250D44]">
+                <div class="w-full h-auto lg:w-[380px] lg:h-[440px] rounded-lg bg-[#250D44]">
                     <iframe class="w-full h-[214px]" src="https://www.youtube.com/embed/BHTw1gvj4_U?si=WVWo31G-9dD7Tkmz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="px-4">
                         <h3 class="text-2xl font-bold mt-6 mb-3">The Future of AI in Everyday <br> Life</h3>
@@ -172,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-[380px] h-[440px] rounded-lg bg-[#250D44]">
+                <div class="w-full h-auto lg:w-[380px] lg:h-[440px] rounded-lg bg-[#250D44]">
                     <iframe class="w-full h-[214px]" src="https://www.youtube.com/embed/BHTw1gvj4_U?si=WVWo31G-9dD7Tkmz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="px-4">
                         <h3 class="text-2xl font-bold mt-6 mb-3">The Future of AI in Everyday <br> Life</h3>
@@ -187,7 +190,7 @@
         </section>
         
         <!-- Meet section -->
-        <section class="bg-[#1A0B2E] pb-30 p-10">
+        <section class="bg-[#1A0B2E] pb-30 p-10 hidden">
             <div class="max-w-[1200px] m-auto pb-10 pt-20">
                 <h1 class="text-4xl text-white font-bold text-center">Meet the Host</h1>
                 <div class="h-[text-green-500] flex items-center justify-center gap-3 bg-[#351165] mt-10 rounded-3xl p-10">
@@ -211,7 +214,7 @@
         </section>
 
         <!-- Footer section -->
-        <section class="bg-[url('/images/footer-bg.png')] bg-cover bg-center">
+        <section class="bg-[url('/images/footer-bg.png')] bg-cover bg-center hidden">
             <div class="max-w-[1200px] h-[412px] m-auto flex justify-center flex-col items-center">
                 <img src="./images/TechWave.png" alt="">
                 <div class="flex gap-10 my-8 text-center">
