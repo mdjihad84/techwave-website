@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./style.css">
     <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-[#230E3D] text-white font-inter">
 
@@ -22,7 +24,7 @@
                     <li><a href="#">Host</a></li>
                 </ul>
             </nav>
-            <button class="hidden sm:block p-4 py-3 bg-[linear-gradient(to_right,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-3xl">Subscribe</button>
+            <button class="hidden sm:block p-4 py-3 cursor-pointer bg-[linear-gradient(to_right,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] rounded-3xl">Subscribe <i class="fa-solid fa-arrow-right"></i></i></button>
             <div class="block sm:hidden">
                 <img class="w-5 h-5" src="./images/hamburger-menu.png" alt="">
             </div>
@@ -39,7 +41,7 @@
                         <div class="absolute inset-0 flex justify-center items-center">
                             <img class="w-11 h-18" src="./images/microphone.png" alt="">
                         </div>
-                        <span class="absolute top-0 right-0 bg-green-500 text-black p-4 py-1 rounded text-base lg:text-lg font-semibold">
+                        <span class="absolute top-0 right-0 bg-green-500 text-black p-4 py-1 rounded-2xl text-base lg:text-lg font-semibold">
                             New
                         </span>
                     </div>
@@ -99,7 +101,7 @@
                 Why Choose TechWave
             </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 gap-4 pb-15 lg:pb-30">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 gap-5 pb-15 lg:pb-30">
                 <!-- Card 1: left, span 2 rows -->
                 <div class="bg-[#351165] lg:row-span-2 px-10 py-16 rounded-4xl
                             flex flex-col justify-center gap-4 text-left">
